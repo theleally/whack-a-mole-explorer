@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toupeira1, .toupeira2, .toupeira3, .toupeira4, .toupeira5, .toupeira6, .toupeira7, .toupeira8, .toupeira9 {
+  position: absolute;
+  opacity: 0;
+}
+
+.toupeira1 {
+  animation: downTop 700ms 100ms reverse;
+  transition: all ease;
+}
+
+.toupeira2 {
+  animation: downTop 700ms 200ms reverse;
+  transition: all ease;
+}
+
+.toupeira3 {
+  animation: downTop 700ms 300ms reverse;
+  transition: all ease;
+}
+
+.toupeira4 {
+  animation: downTop 700ms 800ms reverse;
+  transition: all ease;
+}
+
+.toupeira5 {
+  animation: downTop 700ms 900ms reverse;
+  transition: all ease;
+}
+
+.toupeira6 {
+  animation: downTop 700ms 1000ms reverse;
+  transition: all ease;
+}
+
+.toupeira7 {
+  animation: downTop 700ms 1100ms reverse;
+  transition: all ease;
+}
+
+.toupeira8 {
+  animation: downTop 700ms 1200ms reverse;
+  transition: all ease;
+}
+
+.toupeira9 {
+  animation: downTop 700ms 1300ms reverse;
+  transition: all ease;
+}
+
+.holes {
+  display: grid;
+  grid-template-areas: 
+  "A B C D"
+  "E F G H"
+  "I J K L";
+  margin: 20rem 30rem;
+}
+
+.holes .hole:nth-child(1) {
+  grid-area: A;
+}
+
+.holes .hole:nth-child(2) {
+  grid-area: B;
+}
+.holes .hole:nth-child(3) {
+  grid-area: C;
+}
+.holes .hole:nth-child(4) {
+  grid-area: D;
+}
+.holes .hole:nth-child(5) {
+  grid-area: E;
+}
+.holes .hole:nth-child(6) {
+  grid-area: F;
+}
+.holes .hole:nth-child(7) {
+  grid-area: G;
+}
+.holes .hole:nth-child(8) {
+  grid-area: H;
+}
+.holes .hole:nth-child(9) {
+  grid-area: I;
+}
+.holes .hole:nth-child(10) {
+  grid-area: J;
+}
+.holes .hole:nth-child(11) {
+  grid-area: K;
+}
+.holes .hole:nth-child(12) {
+  grid-area: L;
+}
+
+@keyframes downTop {
+  0% {
+      opacity: 0;
+      transform: translateY(+15px);
+  }
+
+  50% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-15px) ;
+  }
+}
+
+
+
